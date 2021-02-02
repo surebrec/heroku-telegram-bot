@@ -18,7 +18,7 @@ bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     print(message.text)
-    bot.reply_to(message, "FUCK OFF")
+    bot.reply_to(message, "F*CK OFF")
 
 
 @bot.message_handler(func=lambda m: True)
