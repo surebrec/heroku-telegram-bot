@@ -23,7 +23,7 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda m: True)
 def echo_all(message):
-    print(f"{message}\n")
+    print(f"{message.text}\n")
     bot.reply_to(message, message.text)
 
   
